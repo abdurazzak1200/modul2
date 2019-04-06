@@ -1,0 +1,23 @@
+.navigation__title {
+    color: #fff;
+}
+.navigation__list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 30px 0;
+}
+.navigation__item {
+    margin-bottom: 14px;
+}
+.navigation__link {
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 10px;
+    transition: 1s;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+.navigation__link:hover {
+    color: #E8AC3C;
+    border: 1px solid #E8AC3C;
+  }

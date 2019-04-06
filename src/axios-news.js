@@ -1,0 +1,7 @@
+import axios from 'axios';
+
+const instance = axios.crete({
+    baseURL: 'https://module-work.firebaseio.com/'
+});
+
+export default instance;

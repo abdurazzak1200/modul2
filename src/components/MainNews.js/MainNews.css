@@ -1,0 +1,32 @@
+.main__news {
+    text-align: center;
+}
+.main__news-list {
+    margin: 100px 0;
+    list-style-type: none;
+    display: flex;
+}
+.main__news-item {
+    margin-right: 50px;
+    background: #00388D;
+    color: #fff;
+}
+.news-item__img {
+    width: 100%;
+}
+.news-item__blog {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 18px;
+    margin: 0 3px;
+}
+.news-item__time {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: right;
+    font-size: 11px;
+    margin-right: 8px;
+}
+.news-item__paraph {
+    margin: 10px 5px;
+}

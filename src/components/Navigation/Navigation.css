@@ -1,0 +1,37 @@
+.nav {
+  background: #00388D;
+  height: 70px;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.nav__logo {
+  height: 50px;
+  display: inline-block;
+}
+.logo__img {
+  height: 50px;
+}
+.nav__list {
+  margin-left: auto;
+  box-sizing: border-box;
+}
+.nav__item {
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+.nav__link {
+  color: #fff;
+  transition: 1s;
+  border: 1px solid transparent;
+  padding: 3px 8px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.nav__link:hover {
+  color: #E8AC3C;
+  border: 1px solid #E8AC3C;
+}
+.nav__link.active {
+  font-weight: bold;
+  border: 1px solid #fff;
+}

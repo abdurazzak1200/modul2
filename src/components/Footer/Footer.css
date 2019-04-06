@@ -1,0 +1,10 @@
+.footer {
+    background: #00388D;
+    color: #fff;
+    padding-top: 60px;
+}
+.footer__nav-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 100px;
+}
