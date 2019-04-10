@@ -1,0 +1,32 @@
+.contact {
+    background: #00388D;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color: #ffffff;
+    text-align: center;
+}
+.contact__logo img {
+    width: 150px;
+}
+.contact__link-news {
+    text-decoration: none;
+    transition: .5s;
+    animation: 1s alternate infinite;
+    animation-name: color; 
+}
+.call__list {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.call__img {
+    width: 3rem;
+}
+
+
+@keyframes color{
+    0% {color: rgb(255, 255, 255)}
+    100% {color: black}
+}
+

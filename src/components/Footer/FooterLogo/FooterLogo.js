@@ -8,7 +8,7 @@ const FooterLogo = () => {
             <a href='/'>
                 <img src={logo} alt="logo"/>
             </a>
-            <p className='footer__logo-paraph'>© Все права защищены</p>
+            <p className='footer__logo-paraph'>© Все права защищены 2019-г.</p>
         </div>
     );
 }

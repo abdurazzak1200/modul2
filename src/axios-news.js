@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const instance = axios.crete({
+const instance = axios.create({
     baseURL: 'https://module-work.firebaseio.com/'
 });
 

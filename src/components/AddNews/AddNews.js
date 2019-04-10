@@ -1,0 +1,55 @@
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import { createNews } from '../../store/action/news';
+
+class AddNews extends Component {
+    state = {
+        title: '',
+        text: ''
+    };
+
+    changeHandler = e => {
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+    };
+
+    onSubmitHandler = e => {
+        e.preventDefault();
+
+        const news = {
+            title: this.state.title,
+            text: this.state.text,
+            date: new Date().getTime()
+        }
+
+        this.props.onCreateNews(news);
+    }
+
+    render() {
+        return (
+            <div className='add-news'>
+                <form className="news-form" onSubmit={this.onSubmitHandler}>
+                    <input type="text" name='title' onChange={this.changeHandler}/>
+                    <textarea name="text"  onChange={this.changeHandler}/>
+                    <button>ОТПРАВИТЬ</button>
+                </form>
+            </div>
+        );
+    }
+    
+}
+
+// const mapStateToProps = state => {
+//     return {
+
+//     }
+// };
+
+const mapDispatchToProps = dispatch => {
+    return {
+        onCreateNews: news => dispatch(createNews(news))
+    }
+};
+
+export default connect(null, mapDispatchToProps)(AddNews); 
