@@ -29,11 +29,15 @@ class AddNews extends Component {
     render() {
         return (
             <div className='add-news'>
-                <form className="news-form" onSubmit={this.onSubmitHandler}>
-                    <input type="text" name='title' onChange={this.changeHandler}/>
-                    <textarea name="text"  onChange={this.changeHandler}/>
-                    <button>ОТПРАВИТЬ</button>
-                </form>
+                <div className="container">
+                    <form className="news-form" onSubmit={this.onSubmitHandler}>
+                        <h3 className="add-news__title">Введите заголовок</h3>
+                        <input className='title-block' type="text" name='title' onChange={this.changeHandler}/>
+                        <h3 className="add-news__text">Введите статью</h3>
+                        <textarea className='text-block' name="text"  onChange={this.changeHandler}/>
+                        <button>ОТПРАВИТЬ</button>
+                    </form>
+                </div>
             </div>
         );
     }
