@@ -35,7 +35,7 @@ class AddNews extends Component {
                         <input className='title-block' type="text" name='title' onChange={this.changeHandler}/>
                         <h3 className="add-news__text">Введите статью</h3>
                         <textarea className='text-block' name="text"  onChange={this.changeHandler}/>
-                        <button>ОТПРАВИТЬ</button>
+                        <button className='btn12'>ОТПРАВИТЬ</button>
                     </form>
                 </div>
             </div>
