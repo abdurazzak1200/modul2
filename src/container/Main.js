@@ -2,12 +2,12 @@ import React from 'react';
 import './Main.css'
 
 import MainNews from '../components/MainNews.js/MainNews';
-import Banner from '../components/Banner/Banner';
+import Example from '../UI/Carousel/Carousel.js'
 
 const Main = () => {
     return (
         <div className='main'>
-            <Banner/>
+            <Example/>
             <MainNews/>
         </div>
     );

@@ -1,6 +1,5 @@
 import React from 'react';
 import './MainNews.css';
-import {NavLink} from 'react-router-dom';
 import News1 from '../../assets/images/news/news.bishkek.jpg';
 import News2 from '../../assets/images/news/news2.jpg';
 import News3 from '../../assets/images/news/news3.jpg';
